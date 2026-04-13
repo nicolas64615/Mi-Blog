@@ -1,0 +1,225 @@
+/* RESET */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* VARIABLES */
+:root {
+    --color-primary: #028090;
+    --color-primary-dark: #015A66;
+    --color-accent: #38BDF8;
+    --color-bg: #F8FAFC;
+    --color-text: #1E293B;
+    --color-muted: #64748B;
+    --color-white: #FFFFFF;
+    --color-border: #E2E8F0;
+
+    --font-main: Arial, Helvetica, sans-serif;
+    --font-heading: Georgia, 'Times New Roman', serif;
+}
+
+/* BASE */
+body {
+    font-family: var(--font-main);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+/* TITULOS */
+h1, h2, h3 {
+    font-family: var(--font-heading);
+}
+
+h2 {
+    color: var(--color-primary);
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.15rem;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    color: var(--color-white);
+    padding: 30px 20px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+/* NAV */
+nav a {
+    display: inline-block;
+    color: var(--color-white);
+    text-decoration: none;
+    margin: 0 8px;
+    padding: 6px 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* MAIN */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* POSTS */
+.post {
+    background-color: var(--color-white);
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.post:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* DESTACADO */
+.destacado {
+    border-left: 4px solid var(--color-accent);
+    background-color: #F0F9FF;
+}
+
+/* META */
+.meta {
+    color: var(--color-muted);
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+/* BOTONES */
+.btn {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-primary-dark);
+}
+
+/* ASIDE */
+aside {
+    background-color: #F1F5F9;
+    padding: 20px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+aside h3 {
+    color: var(--color-primary);
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+aside h3:first-child {
+    margin-top: 0;
+}
+
+ul > li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+aside a {
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+aside a:hover {
+    color: var(--color-accent);
+}
+
+/* FORMULARIO */
+#contacto {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+#contacto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.25);
+}
+
+button {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+/* LINKS */
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.85rem;
+}

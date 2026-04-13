@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog - Clase 3 CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Mi Blog de Desarrollo Web</h1>
+        <p>Aprendiendo CSS3 paso a paso</p>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#articulos">Artículos</a>
+            <a href="#about">Sobre Mí</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Hola CSS!</h1>
+        
+        <article class="post">
+            <h2>Qué es CSS y por qué importa</h2>
+            <p class="meta">Publicado el 22 de marzo, 2026</p>
+            <p>CSS (Cascading Style Sheets) es el lenguaje que da vida visual a las páginas web.</p>
+            <p>En esta clase aprenderemos selectores, el modelo de caja y cómo crear diseños profesionales.</p>
+            <a href="#" class="btn">Leer más</a>
+        </article>
+
+        <article class="post destacado">
+            <h2>Selectores: El poder de CSS</h2>
+            <p class="meta">Publicado el 22 de marzo, 2026</p>
+            <p>Los selectores son la base de CSS. Nos permiten apuntar a elementos específicos del HTML.</p>
+            <p>Existen selectores de elemento, clase, ID y combinadores que veremos en detalle.</p>
+            <a href="#" class="btn">Leer más</a>
+        </article>
+        
+        <aside>
+            <h3>Sobre este blog</h3>
+            <p>Blog creado como ejercicio de la <strong>Clase 3</strong> de Programación Front End en INACAP.</p>
+            
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="#">HTML5</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">JavaScript</a></li>
+            </ul>
+        </aside>
+    </main> <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com">
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje..."></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Mi Blog - INACAP Front End</p>
+    </footer>
+
+</body>
+</html>
